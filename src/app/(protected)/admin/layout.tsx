@@ -1,4 +1,5 @@
 'use client'
+import DashboardShell from "@/components/layout/DashboardShell";
 import { useAuth } from "@/hooks/useAuth";
 import { redirect } from "next/navigation";
 
@@ -15,5 +16,5 @@ export default function adminLayout({
 
 
 
-    return<>{children}</>
+    return<DashboardShell>{children}</DashboardShell>
 }
