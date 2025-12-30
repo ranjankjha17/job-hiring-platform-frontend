@@ -5,7 +5,7 @@ import { useAuth } from '@/hooks/useAuth'
 import { useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 
-export default function Dashboard() {
+export default function AdminDashboard() {
     const { user, isAuthenticated, authLoading, logout } = useAuth()
     const router = useRouter()
 
@@ -21,7 +21,7 @@ export default function Dashboard() {
 
     return (
         <div className='p-6'>
-            <h1 className='text-2xl font-bold'>Dashboard</h1>
+            <h1 className='text-2xl font-bold'>Admin Dashboard</h1>
             <p className='mt-2'>Name: {user.name}</p>
             <p>Role: {user.role}</p>
             <Button onClick={logout} className='mt-4'>Logout</Button>

@@ -56,7 +56,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       setUser(user)
       setToken(token)
       localStorage.setItem("auth", JSON.stringify({ token, user }))
-      router.replace("/dashboard") // 👈 IMPORTANT
+      if (user.role === 'admin') router.replace('/admin/dashboard')
+      else if (user.role === 'recruiter') router.replace("/recruiter/dashboard")
+      else router.replace('/jobseeker/dashboard')
     } catch {
       setError("Login failed")
     } finally {

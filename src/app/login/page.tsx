@@ -11,12 +11,12 @@ import { toast } from 'sonner'
 export default function LoginPage() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const { login, isAuthenticated, actionLoading, authLoading } = useAuth()
+    const { login, isAuthenticated, actionLoading, authLoading,user } = useAuth()
     const router = useRouter();
     
     useEffect(() => {
-        if (!authLoading && isAuthenticated) {
-            router.replace('/dashboard')
+        if (!authLoading && isAuthenticated && user) {
+            router.replace(`/${user?.role}/dashboard`)
         }
     }, [authLoading, isAuthenticated, router])
 
