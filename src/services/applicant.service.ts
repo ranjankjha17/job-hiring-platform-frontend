@@ -1,7 +1,7 @@
 import api from '@/services/api'
 
 export const getApplicants = async (jobId?: string) => {
-  const res = await api.get('/reruiter/applicants', {
+  const res = await api.get('/applicants', {
     params: { jobId },
   })
   return res.data

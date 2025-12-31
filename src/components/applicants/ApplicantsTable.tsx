@@ -43,9 +43,9 @@ export default function ApplicantsTable({
               onClick={() => setSelected(app)}
             >
               <TableCell className="font-medium">
-                {app.name}
+                {app.applicant.name}
               </TableCell>
-              <TableCell>{app.jobTitle}</TableCell>
+              <TableCell>{app.job.title}</TableCell>
               <TableCell>
                 <ApplicantStatusBadge status={app.status} />
               </TableCell>
