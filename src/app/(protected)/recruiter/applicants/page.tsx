@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import ApplicantsTable from '@/components/applicants/ApplicantsTable'
 import { getApplicants } from '@/services/applicant.service'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import ApplicantsTable from '@/features/recruiter/applicants/ApplicantsTable'
 
 export default function ApplicantsPage() {
   const [applicants, setApplicants] = useState([])

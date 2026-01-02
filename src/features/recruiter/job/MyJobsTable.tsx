@@ -1019,8 +1019,8 @@ import {
 } from 'lucide-react'
 
 // Import the components - Make sure these paths are correct
-import JobStatusBadge from '@/components/job/JobStatusBadge'
-import JobActions from '@/components/job/JobActions'
+import JobStatusBadge from '@/features/recruiter/job/JobStatusBadge'
+import JobActions from '@/features/recruiter/job/JobActions'
 
 export default function MyJobsTable({
   jobs,

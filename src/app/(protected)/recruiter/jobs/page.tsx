@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { getMyJobs } from '@/services/job.service'
-import MyJobsTable from '@/components/job/MyJobsTable'
+import MyJobsTable from '@/features/recruiter/job/MyJobsTable'
 
 export default function MyJobsPage() {
   const [jobs, setJobs] = useState([])
