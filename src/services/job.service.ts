@@ -1,3 +1,4 @@
+import { Job } from '@/features/job-seeker/types/job';
 import api from '@/services/api'
 
 export const createJob = async (payload: any) => {
@@ -5,8 +6,15 @@ export const createJob = async (payload: any) => {
   return data
 }
 
-export const getMyJobs = async () => {
-  const res = await api.get('/jobs')
+export const getJobs = async (params?: any): Promise<Job[]> => {
+  const res = await api.get("/jobs", { params });
+  return res.data;
+};
+
+
+export const getMyJobs = async (filters: any) => {
+  const res = await api.get('/job-seeker/jobs')
+  // console.log(res.data)
   return res.data
 }
 

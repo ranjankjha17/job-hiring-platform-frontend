@@ -1,3 +1,4 @@
+import { Application } from '@/features/job-seeker/types/application';
 import api from '@/services/api'
 
 export const getApplicants = async (jobId?: string) => {
@@ -6,6 +7,11 @@ export const getApplicants = async (jobId?: string) => {
   })
   return res.data
 }
+export const getMyApplications = async (): Promise<Application[]> => {
+  const res = await api.get("/job-seeker/applications/my");
+  console.log(res.data)
+  return res.data;
+};
 
 export const updateApplicantStatus = async (
   id: string,
