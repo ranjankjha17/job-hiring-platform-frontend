@@ -75,7 +75,7 @@ export const sidebarMenu: Record<Role, SidebarItem[]> = {
     { label: 'Dashboard', href: '/jobseeker/dashboard', icon: LayoutDashboard },
     { label: 'Find Jobs', href: '/jobseeker/find-jobs', icon: Briefcase },
     { label: 'Applications', href: '/jobseeker/applied-jobs', icon: FilePlus },
-    { label: 'Saved Jobs', href: '/saved-jobs', icon: Bookmark },
-    { label: 'Profile', href: '/profile', icon: User },
+    { label: 'Saved Jobs', href: '/jobseeker/saved-jobs', icon: Bookmark },
+    { label: 'Profile', href: '/jobseeker/profile', icon: User },
   ],
 }
