@@ -6,5 +6,10 @@ export interface Job {
   experience: string;
   salary: string;
   skills: string[];
+  isBlocked: boolean;
+  applicationCount: number;
+  status: JobStatus;
   createdAt: string;
 }
+
+export type JobStatus = "open" | "closed" | "paused";
