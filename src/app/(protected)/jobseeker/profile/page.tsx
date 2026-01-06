@@ -17,7 +17,11 @@ export default function ProfilePage() {
       name: form.name || profile.name,
       phone: form.phone || profile.profile?.phone,
       location: form.location || profile.profile?.location,
-      skills: (form.skills || profile.profile?.skills)?.split(","),
+      // skills: (form.skills || profile.profile?.skills)?.split(","),
+      skills: form.skills
+        ? form.skills.split(",").map(s => s.trim()).filter(Boolean)
+        : profile.profile?.skills || [],
+
       experience: form.experience || profile.profile?.experience
     })
   }

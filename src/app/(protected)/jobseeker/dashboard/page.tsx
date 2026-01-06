@@ -47,7 +47,10 @@ console.log(applications.filter(a => a.status === "shortlisted" || "Shortlisted"
       <h1 className="text-2xl font-bold">Dashboard</h1>
 
       <div className="grid md:grid-cols-3 gap-4">
-        <StatsCard title="Applied Jobs" value={applications.length} />
+        <StatsCard title="Applied Jobs" 
+        // value={applications.length} 
+        value={applications.filter(a => a.status === "applied" || "Applied").length}
+        />
         <StatsCard
           title="Shortlisted"
           value={applications.filter(a => a.status === "shortlisted" || "Shortlisted").length}

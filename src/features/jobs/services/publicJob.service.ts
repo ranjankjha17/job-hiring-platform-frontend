@@ -10,3 +10,5 @@ export const getJobDetails = async (jobId: string): Promise<Job> => {
   const res = await api.get(`/jobs/public/${jobId}`)
   return res.data
 }
+export const checkJobApplied = (jobId: string) =>
+  api.get(`/jobs/${jobId}/is-applied`)

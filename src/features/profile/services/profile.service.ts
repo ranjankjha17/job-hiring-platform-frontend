@@ -14,5 +14,8 @@ export const uploadResume = async (file: File) => {
   const formData = new FormData()
   formData.append("resume", file)
 
-  return api.post("/profile/resume", formData)
+  return api.post("/resume/upload", formData, {
+    headers: { "Content-Type": "multipart/form-data" },
+  })
+
 }
