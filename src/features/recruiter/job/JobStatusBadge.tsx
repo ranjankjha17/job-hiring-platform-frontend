@@ -1,22 +1,3 @@
-// import { Badge } from '@/components/ui/badge'
-
-// export default function JobStatusBadge({ status }: { status: string }) {
-//   const colors: Record<string, string> = {
-//     Active: 'bg-green-100 text-green-700',
-//     Closed: 'bg-red-100 text-red-700',
-//     Draft: 'bg-gray-100 text-gray-700',
-//   }
-
-//   return (
-//     <Badge className={colors[status] || 'bg-muted'}>
-//       {status}
-//     </Badge>
-//   )
-// }
-
-
-
-
 'use client'
 
 import { Badge } from '@/components/ui/badge'

@@ -1,39 +1,3 @@
-// import { Role } from '@/context/AuthContext'
-
-// export interface SidebarItem {
-//   label: string
-//   href: string
-// }
-
-// export const sidebarMenu: Record<Role, SidebarItem[]> = {
-//   recruiter: [
-//     { label: 'Dashboard', href: '/recruiter/dashboard' },
-//     { label: 'Post Job', href: '/recruiter/post-job' },
-//     { label: 'My Jobs', href: '/recruiter/jobs' },
-//     { label: 'Applicants', href: '/recruiter/applicants' },
-//     { label: 'Messages', href: '/recruiter/messages' },
-//     { label: 'Company Profile', href: '/recruiter/settings' },
-//   ],
-
-//   admin: [
-//     { label: 'Dashboard', href: '/admin/dashboard' },
-//     { label: 'Users', href: '/admin/users' },
-//     { label: 'Jobs', href: '/admin/jobs' },
-//     { label: 'Reports', href: '/admin/reports' },
-//     { label: 'Settings', href: '/admin/settings' },
-//   ],
-
-//   jobseeker: [
-//     { label: 'Dashboard', href: '/dashboard' },
-//     { label: 'Find Jobs', href: '/jobs' },
-//     { label: 'Applications', href: '/applications' },
-//     { label: 'Saved Jobs', href: '/saved-jobs' },
-//     { label: 'Profile', href: '/profile' },
-//   ],
-// }
-
-
-
 import {
   LayoutDashboard,
   Briefcase,
